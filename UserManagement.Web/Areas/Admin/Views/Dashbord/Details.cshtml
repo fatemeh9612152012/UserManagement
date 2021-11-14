@@ -1,0 +1,74 @@
+﻿@model UserManagement.Web.Models.UserShowDto
+
+@{
+    ViewData["Title"] = "جزییات کاربر";
+}
+
+<p>
+    <a asp-action="GetAllUsers">بازگشت</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.PhoneNumber)
+            </td>
+        </tr>
+    </tbody>
+</table>
